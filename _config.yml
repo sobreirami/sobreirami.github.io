@@ -1,100 +1,37 @@
-# main text of home
-name: Michel Sobreira
-bio: Programador
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-# twitter summary info
-description: Blog para assuntos de tecnologia e o que mais eu quiser
+# Setup
+title:            Hydeout
+tagline:          'A Jekyll theme'
+description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+url:              https://fongandrew.github.io/hydeout
+baseurl:          # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: assets/images/michel.jpg
+author:
+  name:           'Andrew Fong'
+  url:            https://twitter.com/fongandrewc
 
-# If you want to include your resume, set to true
-# and specify source (external or local).
-#resume: true
-#resume-external: true
-#resume-url: https://google.com/?q=my+resume
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
-
-url: http://sobreirami.github.io
-# your url: http://USERNAME.github.io
-
-permalink: /:title/
-
-# To enable google analytics, supply your token below
-analytics-google: 'UA-40473834-1'
-
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
-
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: sobreirami # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
-
-# if you don't have any of social below, comment the line
-facebook: sobreiramic
-#witter: sobreiramic
-# google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-# linkedin: mylinkedin
-# youtube: myyoutube
-# spotify: myspotify
-github: sobreirami
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-#medium: medium
-# vimeo: myvimeo
-email: sobreira.michel@gmail.com
-
-authors:
-    Michel:
-        name: Michel Sobreira
-        bio: Programador
-        external-image: false
-        picture: assets/images/profile.jpg
-
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: normal
-
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
-
-# if you don't need projects, comment the *projects* configs below
-projects: true
-
-# if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
-
-# do you want to show the "read time" of the posts?
-read-time: true
-
-# do you want to show the "tags" inside the posts?
-show-tags: true
-
-# related posts inside a post?
-related: true
-
-# Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
-
-# show author block at the end of a post ?
-show-author: true
-
-# do you want some animations?
-animation: true
-
-gems:
-  - jekyll-seo-tag
+plugins:
+  - jekyll-feed
   - jekyll-gist
+  - jekyll-paginate
 
-jekyll-mentions:
-    base_url: https://github.com
+# Custom vars
+version:            3.4.1
+sidebar_home_link:  true
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
+github:
+  repo:             https://github.com/fongandrew/hydeout

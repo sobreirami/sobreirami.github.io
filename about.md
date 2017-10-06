@@ -1,11 +1,13 @@
 ---
-title: About
 layout: page
+title: About
+sidebar_link: true
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<h2>Projetos</h2>
+<p class="message">
+  Hey there! This page is included as an example. Feel free to customize it
+  for your own use upon downloading. Carry on!
+</p>
 
-<ul>
-	<li><a href="https://github.com/sobreirami/AppEconomiaMaxima">Economia máxima</a></li>
-</ul>
+To make pages show up in the sidebar, add `sidebar_link: true` to the front
+matter.
